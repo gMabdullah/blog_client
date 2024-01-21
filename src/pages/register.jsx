@@ -23,7 +23,7 @@ const RegistrationForm = () => {
     event.preventDefault();
 
     try {
-      const {data, status} = await axios.post("/api/register_user", formData);
+      const {data, status} = await axios.post("/register_user", formData);
 
     if(status === 200){
         toast.success(data?.results)
